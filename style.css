@@ -440,6 +440,7 @@ label {
   justify-content: flex-start;
   align-items: stretch;
   gap: 20%;
+  bottom: 0;
 }
 
 .footer__block {
@@ -447,22 +448,18 @@ label {
   flex-direction: column;
 }
 
-.footer_subTitle {
+.footer__block > a {
+  margin-bottom: 1.2rem;
+}
+
+.footer__block > h2 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
-.footer_link {
-  margin-bottom: 1.2rem;
-}
-
-footer > p {
-  position: relative;
-  bottom: 1.2rem;
-  right: 1rem;
-  font-size: 0.9rem !important;
-  height: 0;
-  text-align: end;
+.gitHubLink {
+  text-decoration: underline;
+  text-decoration-color: var(--main-blue);
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
