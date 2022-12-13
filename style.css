@@ -14,6 +14,7 @@ body {
   background-color: white;
   width: 100%;
   height: 100%;
+  max-width: 1600px;
 }
 
 .text {
@@ -26,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 i {
@@ -43,30 +45,27 @@ p {
 
 /* =========================== HEADER =========================== */
 
-.header {
+header {
   height: 9.6rem;
-  /* border: 1px solid black; */
-  display: flex;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header_logoBooki {
   height: 2.9rem;
   width: auto;
-  position: absolute;
-  left: 55px;
+  margin-left: 5.5rem;
 }
 
-.header_nav {
-  position: absolute;
-  right: 0;
+nav {
   width: 32.4rem;
   height: 9.6rem;
 }
 
-.headerNav_ul {
+nav > ul {
   height: 9.6rem;
   list-style-type: none;
   display: flex;
@@ -77,19 +76,24 @@ p {
   padding: 0;
 }
 
-.headerNav_li {
+nav > ul > li {
   width: 16.2rem;
   height: 9.6rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
   border-top: 0.3rem solid white;
-  cursor: pointer;
   transition: all 0.2s 0.1s;
 }
 
-.headerNav_li:hover {
+nav > ul > li > a:hover {
   border-top: 0.3rem solid var(--main-blue);
   color: var(--main-blue);
   font-weight: 500;
@@ -108,9 +112,6 @@ p {
   flex-direction: column;
 }
 
-.sectionResultsFilter__titles {
-}
-
 h1 {
   font-size: 2.2rem !important;
   font-weight: 700 !important;
@@ -123,6 +124,7 @@ h1 {
 }
 
 .sectionResultsFilter__form {
+  width: 100%;
 }
 
 .form__search {
@@ -188,10 +190,11 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .buttonsContainer__filter {
-  margin-right: 3rem;
   height: 4.8rem;
   padding: 0 2rem;
   border-radius: 2.5rem;
@@ -258,15 +261,17 @@ label {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 3rem;
-  max-height: 45rem;
+  /* max-height: 45rem; */
+  margin-top: 2.3rem;
 }
 
 .accommodationAndPopularContainer {
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  margin: 5.8rem 0 3.9rem 0;
+  margin: 5.8rem 0 0 0;
 }
 
 /* ********************* ACCOMMODATIONS ******************** */
@@ -280,7 +285,8 @@ label {
 }
 
 .resultContainerTitle {
-  font-size: 2.2rem;
+  font-size: 2.2rem !important;
+  margin: 0 !important;
 }
 
 .accommodationCard {
@@ -291,28 +297,34 @@ label {
   justify-content: space-around;
 }
 
-.accommodationCard__photo {
+.accommodationCard > img {
   height: 12.4rem;
   object-fit: cover;
   border: 0.4rem solid white;
   border-radius: 2rem 2rem 0 0;
 }
 
+.accommodationCard__infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
 .accommodationCard__title {
   margin: 0;
-  padding-left: 1.6rem;
 }
 
 .accommodationCard__price {
   font-size: 1.4rem;
   margin: 0;
-  padding-left: 1.6rem;
   /* margin: 0.9rem 0; */
 }
 
 .accommodationCard__rating {
-  padding-left: 1.6rem;
-  padding-bottom: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 
 .accommodationCard__rating--greyStar {
@@ -322,7 +334,7 @@ label {
 .displayMoreButton {
   border: none;
   margin-top: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   font-weight: 700;
   cursor: pointer;
 }
@@ -364,23 +376,19 @@ label {
   border-radius: 2rem 0 0 2rem;
 }
 
-.accommodationCard__infoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1.6rem 0 1.2rem 1.5rem;
+.popularCard__infoContainer {
+  padding-left: 1.5rem;
+  padding-top: 1.6rem;
 }
 
-.popularCard__infoContainer {
+.popularCard__title {
+  padding-bottom: 0.7rem;
 }
 
 /* ********************* ACTIVITY ******************** */
 
 .activityContainer {
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start; */
+  padding-top: 3.9rem;
 }
 
 .activityCardContainer {
@@ -431,7 +439,7 @@ label {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 23rem;
+  gap: 20%;
 }
 
 .footer__block {
@@ -446,4 +454,250 @@ label {
 
 .footer_link {
   margin-bottom: 1.2rem;
+}
+
+footer > p {
+  position: relative;
+  bottom: 1.2rem;
+  right: 1rem;
+  font-size: 0.9rem !important;
+  height: 0;
+  text-align: end;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .form__filters {
+    margin: 2.5rem 0;
+  }
+  .accommodationAndPopularContainer {
+    flex-direction: column;
+  }
+
+  .accommodationAndPopularContainer {
+    margin-top: 2.8rem;
+  }
+
+  .accommodationContainer,
+  .popularContainer {
+    width: auto;
+  }
+
+  .popularCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .popularCard {
+    width: 33%;
+  }
+
+  .buttonsContainer {
+    gap: 2rem;
+  }
+
+  .buttonsContainer__filter {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .buttonsContainer__filter > i {
+    font-size: 2.2rem;
+    padding-right: 1rem;
+  }
+
+  label {
+    margin-right: 1.7rem;
+  }
+
+  .popularCard__infoContainer {
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .accommodationCard__price {
+    font-size: 1.2rem;
+  }
+
+  .activity__figure {
+    height: 27rem;
+  }
+
+  .footerContainer {
+    gap: 10%;
+  }
+
+  .activity__photo {
+    height: 80%;
+  }
+
+  .activity__photoLegendContainer {
+    height: 20%;
+  }
+
+  /* .accommodationCard__infoContainer {
+    padding: 1rem 0 0 1rem;
+  } */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .accommodationCard {
+    width: 30%;
+  }
+
+  .cardContainer {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* ==================== HEADER ==================== */
+  .header {
+    height: 20rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header_logoBooki {
+    margin-left: 0;
+  }
+
+  .header_nav {
+    width: 100%;
+  }
+
+  .headerNav_li {
+    width: 50%;
+    border-top: none;
+    border-bottom: 0.3rem solid var(--main-bg-grey);
+  }
+
+  .headerNav_li:hover {
+    border-top: none;
+    border-bottom: 0.3rem solid var(--main-blue);
+  }
+
+  /* ==================== SECTION FILTER ==================== */
+
+  .mainContent {
+    margin: 0;
+  }
+
+  .sectionResultsFilter {
+    margin: 0 2rem;
+  }
+
+  .form__locationDotContainer {
+    min-width: 5rem;
+  }
+
+  .form__searchButton {
+    min-width: 5rem;
+  }
+  .form__search {
+    width: 100%;
+  }
+  .form__textInput {
+    width: calc(100% - 10rem);
+  }
+
+  .form__searchButton {
+    width: 4.9rem;
+  }
+
+  .form__searchButton--icon {
+    color: white;
+    display: block;
+  }
+
+  .form__searchButton--searchText {
+    display: none;
+  }
+
+  .form__filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .buttonsContainer {
+    flex-wrap: wrap;
+  }
+
+  .buttonsContainer__filter {
+    font-size: 1.1rem;
+    width: 45%;
+  }
+
+  .buttonsContainer__filter > i {
+    padding-right: 0.5rem;
+  }
+
+  /* ==================== SECTION RESULTS ==================== */
+
+  .accommodationAndPopularContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .popularContainer {
+    order: 1;
+    width: auto;
+    border-radius: 0;
+    padding: 2.8rem 2rem 4.7rem 2rem;
+  }
+
+  .accommodationContainer {
+    order: 2;
+    width: auto;
+    border-radius: 0;
+    background-color: white;
+    padding: 2.5rem;
+  }
+
+  .accommodationCard {
+    width: 100%;
+  }
+
+  .displayMoreButton {
+    display: none;
+  }
+
+  .activityContainer {
+    margin: 6.1rem 2rem 8rem 2rem;
+  }
+
+  .activityCardContainer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .activity__figure {
+    width: 100%;
+    max-height: 19rem;
+  }
+
+  .activity__photo {
+    height: 65%;
+  }
+
+  .activity__photoLegendContainer {
+    height: 35%;
+  }
+
+  /* ==================== FOOTER ==================== */
+
+  .footerContainer {
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 3.5rem 0 6rem 3rem;
+  }
 }
