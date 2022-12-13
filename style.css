@@ -216,7 +216,7 @@ label {
 
 .buttonsContainer__filter > i {
   font-size: 2.2rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .sectionResultsFilter__info {
@@ -501,11 +501,6 @@ label {
   .buttonsContainer__filter {
     padding: 0 1rem;
     font-size: 1.5rem;
-  }
-
-  .buttonsContainer__filter > i {
-    font-size: 2.2rem;
-    padding-right: 1rem;
   }
 
   label {
