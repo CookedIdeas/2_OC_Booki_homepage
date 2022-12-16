@@ -457,11 +457,6 @@ label {
   margin-bottom: 2rem;
 }
 
-.gitHubLink {
-  text-decoration: underline;
-  text-decoration-color: var(--main-blue);
-}
-
 @media all and (min-width: 768px) and (max-width: 992px) {
   .text {
     font-size: 1.4rem;
