@@ -21,7 +21,6 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-
   color: black;
 }
 
@@ -72,8 +71,6 @@ nav > ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 nav > ul > li {
