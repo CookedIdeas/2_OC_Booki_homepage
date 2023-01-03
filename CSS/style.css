@@ -38,10 +38,6 @@ h3 {
   font-weight: 700 !important;
 }
 
-p {
-  margin: 0;
-}
-
 /* =========================== HEADER =========================== */
 
 header {
@@ -116,7 +112,6 @@ h1 {
 }
 
 .sectionResultsFilter__titles > p {
-  margin-top: 0;
   margin-bottom: 2rem;
 }
 
@@ -242,16 +237,16 @@ label {
 
 .card {
   /* width: 24.6rem; */
-  height: 19.9rem;
+  /* height: 19.9rem; */
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
   background-color: white;
   cursor: pointer;
-  animation: box-shadow 0.2s;
+  transition: box-shadow 0.3s 0.05s;
 }
 
 .card:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 .cardContainer {
@@ -260,7 +255,6 @@ label {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3rem;
-  /* max-height: 45rem; */
   margin-top: 2.3rem;
 }
 
@@ -454,6 +448,8 @@ label {
   margin-bottom: 2rem;
 }
 
+/* =========================== RESPONSIVE : TABLET =========================== */
+
 @media all and (min-width: 768px) and (max-width: 992px) {
   .text {
     font-size: 1.4rem;
@@ -539,6 +535,8 @@ label {
   }
 }
 
+/* =========================== RESPONSIVE : MOBILE =========================== */
+
 @media only screen and (max-width: 768px) {
   /* ==================== HEADER ==================== */
   .header {
@@ -546,7 +544,7 @@ label {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .header_logoBooki {
@@ -606,7 +604,7 @@ label {
   }
 
   .form__searchButton {
-    width: 4.9rem;
+    width: 5rem;
   }
 
   .form__searchButton--icon {
