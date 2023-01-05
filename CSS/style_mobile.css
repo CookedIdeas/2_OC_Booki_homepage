@@ -1,0 +1,165 @@
+/* =========================== RESPONSIVE CSS : MOBILE =========================== */
+
+@media only screen and (max-width: 768px) {
+  /* ==================== HEADER ==================== */
+  .header {
+    height: 13rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .header_logoBooki {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav,
+  nav > ul {
+    width: 100%;
+    height: 7rem;
+  }
+
+  nav > ul > li {
+    width: 50%;
+    height: 7rem;
+    /* height: 10rem; */
+  }
+
+  nav > ul > li > a {
+    border-top: none;
+    border-bottom: 0.3rem solid var(--main-bg-grey);
+  }
+
+  nav > ul > li > a:hover {
+    border-top: none;
+    border-bottom: 0.3rem solid var(--main-blue);
+  }
+
+  /* ==================== SECTION FILTER ==================== */
+
+  .mainContent {
+    margin: 0;
+  }
+
+  .sectionResultsFilter {
+    margin: 0 2rem;
+  }
+
+  .form__locationDotContainer {
+    min-width: 5rem;
+  }
+
+  .form__searchButton {
+    min-width: 5rem;
+  }
+  .form__search {
+    width: 100%;
+  }
+  .form__textInput {
+    width: calc(100% - 10rem);
+  }
+
+  .form__searchButton {
+    width: 5rem;
+  }
+
+  .form__searchButton--icon {
+    color: white;
+    display: block;
+  }
+
+  .form__searchButton--searchText {
+    display: none;
+  }
+
+  .form__filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    gap: 2rem;
+  }
+
+  .buttonsContainer__filter {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .buttonsContainer__filter > i {
+    padding-right: 0.5rem;
+  }
+
+  /* ==================== SECTION RESULTS ==================== */
+
+  .accommodationAndPopularContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .popularContainer {
+    order: 1;
+    width: auto;
+    border-radius: 0;
+    padding: 2.8rem 2rem 4.7rem 2rem;
+  }
+
+  .accommodationContainer {
+    order: 2;
+    width: auto;
+    border-radius: 0;
+    background-color: white;
+    padding: 2.5rem;
+  }
+
+  .accommodationCard {
+    width: 100%;
+  }
+
+  .displayMoreButton {
+    display: none;
+  }
+
+  .activityContainer {
+    margin: 6.1rem 2rem 8rem 2rem;
+  }
+
+  .activityCardContainer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .activity__figure {
+    width: 100%;
+    max-height: 19rem;
+  }
+
+  .activity__photo {
+    height: 65%;
+  }
+
+  .activity__photoLegendContainer {
+    height: 35%;
+  }
+
+  /* ==================== FOOTER ==================== */
+
+  .footerContainer {
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 3.5rem 0 6rem 3rem;
+  }
+}

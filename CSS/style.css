@@ -14,7 +14,9 @@ body {
   background-color: white;
   width: 100%;
   height: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .text {
@@ -183,6 +185,8 @@ label {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  justify-content: flex-start;
+
   gap: 3rem;
 }
 
@@ -224,8 +228,8 @@ label {
 .info__iContainer {
   background-color: white;
   border: 0.2rem solid var(--main-bg-grey);
-  border-radius: 100%;
-  width: 2.4rem;
+  border-radius: 50%;
+  min-width: 2.4rem;
   height: 2.4rem;
   display: flex;
   flex-direction: row;
@@ -236,8 +240,6 @@ label {
 /* =========================== SECTION RESULTS =========================== */
 
 .card {
-  /* width: 24.6rem; */
-  /* height: 19.9rem; */
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
   background-color: white;
@@ -280,12 +282,15 @@ label {
   margin: 0 !important;
 }
 
+.accommodationCardContainer {
+  gap: 0;
+}
+
 .accommodationCard {
   width: 30%;
-  min-width: 15rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 .accommodationCard > img {
@@ -311,7 +316,6 @@ label {
 .accommodationCard__price {
   font-size: 1.4rem;
   margin: 0;
-  /* margin: 0.9rem 0; */
 }
 
 .accommodationCard__rating {
@@ -324,7 +328,7 @@ label {
 
 .displayMoreButton {
   border: none;
-  margin-top: 4rem;
+  margin-top: 1rem;
   font-size: 1.8rem !important;
   font-weight: 700;
   cursor: pointer;
@@ -446,254 +450,4 @@ label {
 .footer__block > h2 {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-}
-
-/* =========================== RESPONSIVE : TABLET =========================== */
-
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .text {
-    font-size: 1.4rem;
-  }
-
-  .form__filters {
-    margin: 2.5rem 0;
-  }
-  .accommodationAndPopularContainer {
-    flex-direction: column;
-  }
-
-  .accommodationAndPopularContainer {
-    margin-top: 2.8rem;
-  }
-
-  .accommodationContainer,
-  .popularContainer {
-    width: auto;
-  }
-
-  .popularCardContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2rem;
-  }
-
-  .popularCard {
-    width: 33%;
-  }
-
-  .buttonsContainer {
-    gap: 2rem;
-  }
-
-  .buttonsContainer__filter {
-    padding: 0 1rem;
-    font-size: 1.5rem;
-  }
-
-  label {
-    margin-right: 1.7rem;
-  }
-
-  .popularCard__infoContainer {
-    padding-left: 0.7rem;
-    padding-top: 0.7rem;
-  }
-
-  .accommodationCard__price {
-    font-size: 1.2rem;
-  }
-
-  .activity__figure {
-    height: 27rem;
-  }
-
-  .footerContainer {
-    gap: 10%;
-  }
-
-  .activity__photo {
-    height: 80%;
-  }
-
-  .activity__photoLegendContainer {
-    height: 20%;
-  }
-
-  /* .accommodationCard__infoContainer {
-    padding: 1rem 0 0 1rem;
-  } */
-}
-
-@media only screen and (min--width: 768px) and (max-width: 1200px) and (orientation: landscape) {
-  .accommodationCard {
-    width: 30%;
-  }
-
-  .cardContainer {
-    gap: 1rem;
-  }
-}
-
-/* =========================== RESPONSIVE : MOBILE =========================== */
-
-@media only screen and (max-width: 768px) {
-  /* ==================== HEADER ==================== */
-  .header {
-    height: 13rem;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4rem;
-  }
-
-  .header_logoBooki {
-    margin-left: 0;
-    margin-top: 3rem;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-
-  nav,
-  nav > ul {
-    width: 100%;
-    height: 7rem;
-  }
-
-  nav > ul > li {
-    width: 50%;
-    height: 7rem;
-    /* height: 10rem; */
-  }
-
-  nav > ul > li > a {
-    border-top: none;
-    border-bottom: 0.3rem solid var(--main-bg-grey);
-  }
-
-  nav > ul > li > a:hover {
-    border-top: none;
-    border-bottom: 0.3rem solid var(--main-blue);
-  }
-
-  /* ==================== SECTION FILTER ==================== */
-
-  .mainContent {
-    margin: 0;
-  }
-
-  .sectionResultsFilter {
-    margin: 0 2rem;
-  }
-
-  .form__locationDotContainer {
-    min-width: 5rem;
-  }
-
-  .form__searchButton {
-    min-width: 5rem;
-  }
-  .form__search {
-    width: 100%;
-  }
-  .form__textInput {
-    width: calc(100% - 10rem);
-  }
-
-  .form__searchButton {
-    width: 5rem;
-  }
-
-  .form__searchButton--icon {
-    color: white;
-    display: block;
-  }
-
-  .form__searchButton--searchText {
-    display: none;
-  }
-
-  .form__filters {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
-  }
-
-  .buttonsContainer {
-    flex-wrap: wrap;
-  }
-
-  .buttonsContainer__filter {
-    font-size: 1.1rem;
-    width: 45%;
-  }
-
-  .buttonsContainer__filter > i {
-    padding-right: 0.5rem;
-  }
-
-  /* ==================== SECTION RESULTS ==================== */
-
-  .accommodationAndPopularContainer {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .popularContainer {
-    order: 1;
-    width: auto;
-    border-radius: 0;
-    padding: 2.8rem 2rem 4.7rem 2rem;
-  }
-
-  .accommodationContainer {
-    order: 2;
-    width: auto;
-    border-radius: 0;
-    background-color: white;
-    padding: 2.5rem;
-  }
-
-  .accommodationCard {
-    width: 100%;
-  }
-
-  .displayMoreButton {
-    display: none;
-  }
-
-  .activityContainer {
-    margin: 6.1rem 2rem 8rem 2rem;
-  }
-
-  .activityCardContainer {
-    flex-direction: column;
-    gap: 2.4rem;
-  }
-
-  .activity__figure {
-    width: 100%;
-    max-height: 19rem;
-  }
-
-  .activity__photo {
-    height: 65%;
-  }
-
-  .activity__photoLegendContainer {
-    height: 35%;
-  }
-
-  /* ==================== FOOTER ==================== */
-
-  .footerContainer {
-    flex-direction: column;
-    gap: 3.5rem;
-    padding: 3.5rem 0 6rem 3rem;
-  }
 }

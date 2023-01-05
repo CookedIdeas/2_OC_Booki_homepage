@@ -1,0 +1,86 @@
+/* =========================== RESPONSIVE CSS : TABLET =========================== */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .form__filters {
+    margin: 2.5rem 0;
+  }
+  .accommodationAndPopularContainer {
+    flex-direction: column;
+  }
+
+  .accommodationAndPopularContainer {
+    margin-top: 2.8rem;
+  }
+
+  .accommodationContainer,
+  .popularContainer {
+    width: auto;
+  }
+
+  .popularCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .popularCard {
+    width: 33%;
+  }
+
+  .buttonsContainer {
+    gap: 2rem;
+  }
+
+  .buttonsContainer__filter {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  label {
+    margin-right: 1.7rem;
+  }
+
+  .popularCard__infoContainer {
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .accommodationCard__price {
+    font-size: 1.2rem;
+  }
+
+  .activity__figure {
+    height: 27rem;
+  }
+
+  .footerContainer {
+    gap: 10%;
+  }
+
+  .activity__photo {
+    height: 80%;
+  }
+
+  .activity__photoLegendContainer {
+    height: 20%;
+  }
+
+  /* .accommodationCard__infoContainer {
+      padding: 1rem 0 0 1rem;
+    } */
+}
+
+@media only screen and (min--width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+  .accommodationCard {
+    width: 30%;
+  }
+
+  .cardContainer {
+    gap: 1rem;
+  }
+}
