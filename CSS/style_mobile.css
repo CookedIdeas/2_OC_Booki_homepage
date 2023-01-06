@@ -90,7 +90,8 @@
   .buttonsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 90vw;
+    /* width: 90vw; */
+    width: 100%;
     gap: 2rem;
   }
 
