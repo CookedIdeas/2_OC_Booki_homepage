@@ -92,7 +92,8 @@
     grid-template-columns: 1fr 1fr;
     /* width: 90vw; */
     width: 100%;
-    gap: 2rem;
+    row-gap: 2rem;
+    column-gap: 4%;
   }
 
   .buttonsContainer__filter {
