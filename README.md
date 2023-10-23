@@ -10,4 +10,4 @@ First project of web development training.
 
 Here's a gif ! ⬇️
 
-![Screenshot](screenshot.gif)
+![Screenshot](github_assets/screenshot.gif)
