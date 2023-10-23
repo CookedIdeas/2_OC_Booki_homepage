@@ -8,4 +8,5 @@ First project of web development training.
 - From mockup to HTML structure
 - Responsive design with CSS and media queries
 
+Here's a gif ! ⬇️
 ![Screenshot](screenshot.gif)
