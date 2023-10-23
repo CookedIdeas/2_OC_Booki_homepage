@@ -9,4 +9,5 @@ First project of web development training.
 - Responsive design with CSS and media queries
 
 Here's a gif ! ⬇️
+
 ![Screenshot](screenshot.gif)
