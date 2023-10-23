@@ -8,4 +8,4 @@ First project of web development training.
 - From mockup to HTML structure
 - Responsive design with CSS and media queries
 
-![Screenshot](https://github.com/COURSE_Booki_Openclassrooms/screenshot.png)
+![Screenshot](screenshot.gif)
